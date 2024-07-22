@@ -1,6 +1,7 @@
 package com.managemeals.app
 
 import android.os.Bundle
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
@@ -15,6 +16,7 @@ class MainActivity : ComponentActivity() {
 
         webView = findViewById(R.id.webView)
         webView.settings.javaScriptEnabled = true
+        // WebView.setWebContentsDebuggingEnabled(true)
         webView.webViewClient = WebViewClient()
 
         // Load a web page
